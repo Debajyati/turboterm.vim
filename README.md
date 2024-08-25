@@ -1,5 +1,5 @@
 # TurboTerm.vim
-A vim plugin for adding smart/easy terminal integration in Vanilla Vim (*in vimscript*) **(WIP)**
+A vim plugin for adding smart/easy terminal integration in Vanilla Vim (*in vimscript*)
 > It won't work in Neovim - ;(
 
 But it works like a charm in vim :)
