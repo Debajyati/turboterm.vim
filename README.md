@@ -14,7 +14,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'Debajyati/turboterm.vim'
 call plug#end()
 ```
-Save the file. Restart Vim.
+Save the .vimrc file. Restart Vim.
 
 Then run -
 `:PlugInstall` to install it.
