@@ -8,7 +8,7 @@ I mean, it should!
 ## Installation Instruction
 - Install vim plug or your preferred plugin manager to install the plugin.
 If using vim-plug
-```vimscript
+```vimL
 call plug#begin('~/.vim/plugged')
 ... (your other plugins)
 Plug 'Debajyati/turboterm.vim'
