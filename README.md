@@ -22,7 +22,7 @@ Then run -
 ## Using the plugin
 Using the command - `:TurboToggle`:
 - It takes two arguments - arg1:height/width, arg2:direction ( up | down | right | left )
-- First argument is neccessary. In case second argument, default value down is used.
+- First argument is neccessary. In case of second argument, default value down is used.
 
 Using the keymaps -
 - `<space>tv` toggles terminal based on a default width in vertical direction. (in normal mode)
