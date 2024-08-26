@@ -23,6 +23,7 @@ Then run -
 Using the command - `:TurboToggle`:
 - It takes two arguments - arg1:height/width, arg2:direction ( up | down | right | left )
 - First argument is neccessary. In case of second argument, default value down is used.
+For example - `:TurboToggle 80 right` will open/toggle the terminal with 80 width of size in the right side of a vertical split.
 
 Using the keymaps -
 - `<space>tv` toggles terminal based on a default width in vertical direction. (in normal mode)
