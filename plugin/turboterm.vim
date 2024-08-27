@@ -16,7 +16,7 @@ command! -nargs=+ TurboToggle call g:turboterm#TurboToggle(<f-args>)
 " Horizontally
 nnoremap <space>th  :TurboToggle 12<CR>
 " Vertically
-nnoremap <space>tv  :TurboToggle 90 right<CR>
+nnoremap <space>tv  :TurboToggle 80 right<CR>
 
 " Toggle terminal on from insert mode (keymaps)
 inoremap <C-\> <Esc> :TurboToggle 12<CR>
