@@ -37,4 +37,7 @@ First switch the terminal into normal mode using `<C-n>` and toggle using `<spac
  
 
 ## Reporting Bugs
-In case of any bugs or issues report it in the GitHub.
+In case of any bugs or issues report it in the GitHub (by opening an issue).
+
+## Star ⭐ this repo
+Star ✨ this project to show some 💚 and make it more accessible!
