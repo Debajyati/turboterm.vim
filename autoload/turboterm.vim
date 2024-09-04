@@ -35,3 +35,5 @@ function! g:turboterm#TurboToggle(height, direction="down")
   endif
 endfunction
 
+let &cpo = s:save_cpo
+unlet s:save_cpo
