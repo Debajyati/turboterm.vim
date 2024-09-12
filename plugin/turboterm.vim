@@ -18,6 +18,7 @@ let g:turboterm_default_winsize = "NO_RESIZE"
 " Command to access the TurboToggle function.
 " (both agruments are strictly required)
 command! -nargs=+ TurboToggle call g:turboterm#TurboToggle(<f-args>)
+command! -nargs=0 TurboDefault call g:turboterm#TurboToggle(eval('g:turboterm_default_hor_dir'), eval('g:turboterm_default_winsize'))<CR>
 
 " Toggle terminal on from insert mode (keymaps)
 inoremap <C-\> <Esc> :TurboToggle g:turboterm_default_dir g:turboterm_default_height<CR>
