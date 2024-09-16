@@ -1,4 +1,6 @@
 # TurboTerm.vim
+***Requires vim 8.0 or higher***
+
 A vim plugin for adding smart/easy terminal integration in Vanilla Vim (*in vimscript*)
 > It won't work in Neovim - ;(
 
@@ -10,7 +12,7 @@ But it works like a charm in vim :)
 Install vim plug or your preferred plugin manager to install the plugin.
 If using vim-plug
 ```vim
-Plug 'Debajyati/turboterm.vim', { 'branch': 'vim-8.0' }
+Plug 'Debajyati/turboterm.vim', { 'tag': '*' }
 ```
 Save the .vimrc file. Restart Vim.
 
@@ -56,11 +58,13 @@ Set some keymaps:-
 nnoremap <space>th  :TurboHor<CR>
 " Vertically (based on a default height)
 nnoremap <space>tv  :TurboVert<CR>
+
+" Toggle terminal on from insert mode
+inoremap <C-\>  <Esc>:TurboHor<CR>
 ```
 
-TurboTerm has some built-in keymaps - (If users report that they don't like these keymaps to be provided by default these will be removed in future release)
+TurboTerm has a built-in keymap -
 
-- `<C-\>` toggles terminal based on the same half of the total height in horizontal direction.(in insert mode)
 - `<C-n>` will directly change the window from terminal mode to normal mode.
 
 If you dont kill the terminal and want to toggle it from terminal mode, you can't. You need to toggle it from normal mode.

@@ -12,9 +12,6 @@ let g:loaded_turboterm = 1
 " Commands to access the TurboToggle function
 command! -nargs=+ TurboToggle call g:turboterm#TurboToggle(<f-args>) " (both agruments are strictly required)
 
-" Toggle terminal on from insert mode (keymaps)
-inoremap <C-\>  <Esc>:TurboToggle down NO_RESIZE<CR>
-
 " Terminal mapping for quickly going back to normal mode
 tnoremap <C-n> <C-\><C-n>
 
