@@ -1,6 +1,7 @@
 # TurboTerm.vim
 A vim plugin for adding smart/easy terminal integration in Vanilla Vim (*in vimscript*)
 > It won't work in Neovim - ;(
+
 > Although I plan to extend this project to be compatible with both Vim & Neovim. : )
 
 But it works like a charm in vim :)
@@ -28,6 +29,7 @@ For example - `:TurboToggle right 80` will open/toggle the terminal window with 
 
 Additionally,
 you can set some custom commands to get some default behavior/functionality. Look below to see what I want to mean -
+
 Paste the following code below in your .vimrc -
 ```vim
 let g:turboterm_default_dir = "down"
