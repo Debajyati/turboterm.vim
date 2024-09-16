@@ -7,13 +7,10 @@ A vim plugin for adding smart/easy terminal integration in Vanilla Vim (*in vims
 But it works like a charm in vim :)
 
 ## Installation Instruction
-- Install vim plug or your preferred plugin manager to install the plugin.
+Install vim plug or your preferred plugin manager to install the plugin.
 If using vim-plug
 ```vim
-call plug#begin('~/.vim/plugged')
-... (your other plugins)
-Plug 'Debajyati/turboterm.vim', { 'tag': 'v0.1.0'}
-call plug#end()
+Plug 'Debajyati/turboterm.vim', { 'branch': 'vim-8.0' }
 ```
 Save the .vimrc file. Restart Vim.
 
