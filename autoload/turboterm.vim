@@ -4,22 +4,22 @@ set cpo&vim
 let g:term_buf = 0
 let g:term_win = 0
 " Function for the terminal toggle
-function! g:turboterm#TurboToggle(height, direction="down")
+function! g:turboterm#TurboToggle(direction, height)
   if win_gotoid(g:term_win)
     hide
   else
     if a:direction == "right"
       vertical botright new
-      exec "vert resize " . a:height
     elseif a:direction == "left"
       vertical topleft new
-      exec "vert resize " . a:height
     elseif a:direction == "up"
       topleft new
-      exec "resize " . a:height
     elseif a:direction == "down"
       botright new
-      exec "resize " . a:height
+    else
+      echoerr "incorrect direction value!"
+      echoerr "switching to defaults..."
+      botright new
     endif
     try
       exec "buffer " . g:term_buf
@@ -29,8 +29,18 @@ function! g:turboterm#TurboToggle(height, direction="down")
       set nonumber
       set norelativenumber
       set signcolumn=no
+    finally
+      if a:height == "NO_RESIZE"
+        exec "wincmd ="
+      else
+        if a:direction == "up" || a:direction == "down"
+          exec "resize " . a:height
+        elseif a:direction == "left" || a:direction == "right"
+          exec "vert resize " . a:height
+        endif
+      endif
+      startinsert!
     endtry
-    startinsert!
     let g:term_win = win_getid()
   endif
 endfunction

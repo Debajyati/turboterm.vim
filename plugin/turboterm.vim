@@ -9,18 +9,12 @@ if exists("g:loaded_turboterm") || !has("terminal")
 endif
 let g:loaded_turboterm = 1
 
-" Command to access the TurboToggle function
-command! -nargs=+ TurboToggle call g:turboterm#TurboToggle(<f-args>)
-
-" Toggle terminal on/off from normal mode (keymaps)
-" Horizontally
-nnoremap <space>th  :TurboToggle 12<CR>
-" Vertically
-nnoremap <space>tv  :TurboToggle 80 right<CR>
+" Commands to access the TurboToggle function
+command! -nargs=+ TurboToggle call g:turboterm#TurboToggle(<f-args>) " (both agruments are strictly required)
 
 " Toggle terminal on from insert mode (keymaps)
-inoremap <C-\> <Esc> :TurboToggle 12<CR>
+inoremap <C-\>  <Esc>:TurboToggle down NO_RESIZE<CR>
 
-" Terminal go back to normal mode
+" Terminal mapping for quickly going back to normal mode
 tnoremap <C-n> <C-\><C-n>
 
