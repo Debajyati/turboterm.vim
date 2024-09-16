@@ -33,8 +33,8 @@ Paste the following code below in your .vimrc -
 let g:turboterm_default_dir = "down"
 let g:turboterm_default_winsize = "NO_RESIZE"
 
-let g:turboterm_default_vert_dir = "left" " This will make the TurboVert command always toggle the terminal in the left split.
-let g:turboterm_default_hor_dir = "down" " This will make the TurboHor command always toggle the terminal in the top split.
+let g:turboterm_default_vert_dir = "right" " This will make the TurboVert command always toggle the terminal in the right split.
+let g:turboterm_default_hor_dir = "down" " This will make the TurboHor command always toggle the terminal in the bottom split.
 
 " Following commands take no arguments (utililizing global variables)
 " Default functionality can be overridden by just changing the variable values in the vim config
