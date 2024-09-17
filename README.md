@@ -24,7 +24,7 @@ Using the command - `:TurboToggle`:
 - It takes two arguments - arg1:direction ( up | down | right | left ), arg2:height/width ( integer like 12,80,etc. | "NO_RESIZE" )
 - Both arguments are neccessary. In case of second argument, NO_RESIZE must be used if want the terminal to get size of half of the total window height/width.
 For example - `:TurboToggle right 80` will open/toggle the terminal window with 80 width of size in the right side of a vertical split.
-`:TurboToggle up NO_RESIZE` will open/toggle the terminal window with half of the full screen width in the top of the vertical split.
+`:TurboToggle up NO_RESIZE` will open/toggle the terminal window with half of the full screen width in the top of the horizontal split.
 
 Additionally,
 you can set some custom commands to get some default behavior/functionality. Look below to see what I want to mean -
