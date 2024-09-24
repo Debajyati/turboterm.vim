@@ -1,4 +1,7 @@
 # TurboTerm.vim
+![vim-badge-static](https://staging.shields.io/badge/VIM-9?style=for-the-badge&logo=vim&link=https%3A%2F%2Fwww.vim.org%2F)
+![GPL_v3-LICENSE-badge-static](https://staging.shields.io/badge/GPL_v3-LICENSE-0a0a0a?style=for-the-badge&logo=gnu&logoColor=yellow&logoSize=auto)
+
 ***Requires vim 8.0 or higher***
 
 A vim plugin for adding smart/easy terminal integration in Vanilla Vim (*in vimscript*)
